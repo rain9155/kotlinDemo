@@ -9,6 +9,7 @@ fun main(args: Array<String>) {
     var long  : Long = 3//8byte
     var float : Float = 4f//4byte
     var double : Double = 6.0//8byte
+
     var char : Char = 'n'//2byte
     var b : Boolean = false//1byte
     var byte : Byte = 10//1byte
