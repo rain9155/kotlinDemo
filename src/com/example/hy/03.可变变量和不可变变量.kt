@@ -1,6 +1,9 @@
 package com.example.hy
 
-/** kotlin中能使用val就尽量使用val */
+/**
+ * kotlin的var和val
+ * kotlin中能使用val就尽量使用val
+ */
 fun main(args: Array<String>) {
     //var，可变变量
     var a = 10

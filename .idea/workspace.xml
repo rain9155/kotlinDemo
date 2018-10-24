@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9146192f-9eb4-43c0-8225-68ec2cdec4c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/example/hy/03.可变变量和不可变变量.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/example/hy/04.字符串.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/example/hy/05.字符串常用api.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kotlinDemo/META-INF/kotlinDemo.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kotlinDemo/META-INF/kotlinDemo.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/hy/03.可变变量和不可变变量.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/hy/03.可变变量和不可变变量.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,34 +49,35 @@
     <session id="-1847977244">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.32" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
       <usages-collector id="statistics.spring.boot.mvc.usages" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="kt" value="1210" />
+          <entry key="kt" value="2142" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Kotlin" value="3" />
+          <entry key="Kotlin" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="kt" value="3" />
+          <entry key="kt" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Kotlin" value="1210" />
+          <entry key="Kotlin" value="2142" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -88,7 +88,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/hy/01.基本数据类型.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
+            <state>
               <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
@@ -97,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/hy/02.Kotlin智能类型推断和类型转换.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
+            <state relative-caret-position="368">
               <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
             </state>
           </provider>
@@ -106,17 +106,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/hy/03.可变变量和不可变变量.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+            <state relative-caret-position="69">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/hy/04.字符串.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="40" column="18" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/example/hy/04.字符串.kt">
+        <entry file="file://$PROJECT_DIR$/src/com/example/hy/05.字符串常用api.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+            <state relative-caret-position="281">
+              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/text/Strings.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="1168" column="24" selection-start-line="1168" selection-start-column="24" selection-end-line="1168" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -139,8 +157,9 @@
         <option value="$PROJECT_DIR$/src/com/example/hy/01.基本数据类型.kt" />
         <option value="$PROJECT_DIR$/src/com/example/hy/Kotlin智能类型推断和类型转换.kt" />
         <option value="$PROJECT_DIR$/src/com/example/hy/02.Kotlin智能类型推断和类型转换.kt" />
-        <option value="$PROJECT_DIR$/src/com/example/hy/03.可变变量和不可变变量.kt" />
         <option value="$PROJECT_DIR$/src/com/example/hy/04.字符串.kt" />
+        <option value="$PROJECT_DIR$/src/com/example/hy/03.可变变量和不可变变量.kt" />
+        <option value="$PROJECT_DIR$/src/com/example/hy/05.字符串常用api.kt" />
       </list>
     </option>
   </component>
@@ -161,8 +180,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,7 +209,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540312924800" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540398659424" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -210,7 +229,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.com.example.hy._04_字符串Kt">
+  <component name="RunManager" selected="Kotlin.com.example.hy._05_字符串常用apiKt">
     <configuration name="com.example.hy._01_基本数据类型Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="kotlinDemo" />
       <option name="VM_PARAMETERS" />
@@ -250,13 +269,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.example.hy._05_字符串常用apiKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="kotlinDemo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.example.hy._05_字符串常用apiKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Kotlin.com.example.hy._01_基本数据类型Kt" />
       <item itemvalue="Kotlin.com.example.hy._02_Kotlin智能类型推断和类型转换Kt" />
       <item itemvalue="Kotlin.com.example.hy._04_字符串Kt" />
+      <item itemvalue="Kotlin.com.example.hy._05_字符串常用apiKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.com.example.hy._05_字符串常用apiKt" />
         <item itemvalue="Kotlin.com.example.hy._04_字符串Kt" />
         <item itemvalue="Kotlin.com.example.hy._02_Kotlin智能类型推断和类型转换Kt" />
         <item itemvalue="Kotlin.com.example.hy._01_基本数据类型Kt" />
@@ -276,18 +310,28 @@
       <workItem from="1540087828393" duration="1046000" />
       <workItem from="1540089089432" duration="1891000" />
       <workItem from="1540216996090" duration="1653000" />
-      <workItem from="1540310469699" duration="2205000" />
+      <workItem from="1540310469699" duration="2406000" />
+      <workItem from="1540397048780" duration="1572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6795000" />
+    <option name="totallyTimeSpent" value="8568000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21584478" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21907842" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -296,11 +340,11 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3291815" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3291815" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3291815" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.40925267" />
@@ -326,29 +370,50 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/example/hy/01.基本数据类型.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
+        <state>
           <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/hy/02.Kotlin智能类型推断和类型转换.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
+        <state relative-caret-position="368">
           <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/hy/03.可变变量和不可变变量.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        <state relative-caret-position="69">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/hy/04.字符串.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        <state relative-caret-position="230">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/kotlin/Any.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/kotlin/text/Strings.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="1168" column="24" selection-start-line="1168" selection-start-column="24" selection-end-line="1168" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/hy/05.字符串常用api.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
         </state>
       </provider>
     </entry>
