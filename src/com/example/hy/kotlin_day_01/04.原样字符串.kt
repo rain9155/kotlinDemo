@@ -1,4 +1,4 @@
-package com.example.hy
+package com.example.hy.kotlin_day_01
 
 /**
  * kotlin的原样输出字符串

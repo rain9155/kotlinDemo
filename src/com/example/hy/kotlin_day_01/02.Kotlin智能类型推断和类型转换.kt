@@ -1,4 +1,4 @@
-package com.example.hy
+package com.example.hy.kotlin_day_01
 
 fun main(args : Array<String>){
     /** Kotlin智能类型转换 */
