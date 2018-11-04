@@ -2,6 +2,7 @@ package com.example.hy.kotlin_day_01
 
 /**
  * 有返回值的if语句
+ * ps:返回值只取if语句中最后一行
  */
 fun main(args: Array<String>) {
 

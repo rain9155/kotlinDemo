@@ -1,7 +1,10 @@
 package com.example.hy.kotlin_day_02
 
 /**
- * kotlin的有返回值的when表达式，类似java中的case语句
+ * kotlin的when表达式
+ * ps:kotlin的底层实现原理：
+ * 简单的when表达式底层用switch语句来实现，复杂的when表达式底层用if...else语句来实现
+ * ps:when表达式是有返回值的，返回值只取分支语句中最后一行语句
  */
 fun main(args: Array<String>) {
 
@@ -19,6 +22,10 @@ fun main(args: Array<String>) {
     //需求：完善上面的逻辑
     val age2 = 1
     println(todo2(age2))//输出：还没上小学
+
+    /** 不带参数的when表达式 */
+    val age3 = 18
+    println(todo3(age3))//输出：开始上高中
 }
 
 /**
@@ -53,6 +60,9 @@ fun todo(age : Int) : String =
     }
 
 
+/**
+ * when加强
+ */
 fun todo2(age : Int) : String =
 
         when(age){
@@ -78,3 +88,33 @@ fun todo2(age : Int) : String =
             else -> "步入社会"
         }
 
+/**
+ * 不带参数的when表达式
+ */
+fun todo3(age : Int) : String =
+        when{
+
+            age == 6 -> {
+                "开始上小学"
+            }
+
+            age == 12 -> {
+                "开始上初中"
+            }
+
+            age == 15 -> {
+                "开始上高中"
+            }
+
+            age == 18 -> {
+                "开始上大学"
+            }
+
+            age == 22 -> {
+                "步入社会"
+            }
+
+            else -> {
+                "步入社会"
+            }
+        }
