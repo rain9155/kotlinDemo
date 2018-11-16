@@ -4,6 +4,7 @@ package com.example.hy.kotlin_day_03
  * kotlin中的默认参数，具名参数和可变参数
  */
 fun main(args: Array<String>) {
+
     /** 默认参数，定义函数变量时可以指定默认值 */
     //需求：发送网络请求，默认请求方式为GET
     println(sendRequest("www.baidu.com"))//输出：请求地址：www.baidu.com, 请求方法：GET
