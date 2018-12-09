@@ -11,7 +11,7 @@ package com.example.hy.kotlin_day_03
  * 抽象类前加abstract关键字，若里面有抽象字段或方法，子类要实现它们或自己再次声明为abstract
  * 4、接口：（表示事物的行为）
  * 接口前加interface关键字
- * 接口中的字段要由实现类实现
+ * 接口中的字段不可以默认实现，要由实现类实现
  * 接口中的方法可以在接口中默认实现，若在接口中默认实现，则实现类无需重写方法，否则要重写
  */
 fun main(args: Array<String>) {

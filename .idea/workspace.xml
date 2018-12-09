@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9146192f-9eb4-43c0-8225-68ec2cdec4c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/example/hy/kotlin_day_03/09.继承，抽象类，接口.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/example/hy/kotlin_day_03/10.多态和智能类型转换.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/example/hy/kotlin_day_03/11.嵌套类和内部类.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kotlinDemo/META-INF/kotlinDemo.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kotlinDemo/META-INF/kotlinDemo.kotlin_module" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,10 +48,11 @@
     <session id="-1847977244">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="29" />
+          <entry key="project.closed" value="30" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="2" />
-          <entry key="project.open.time.13" value="4" />
+          <entry key="project.open.time.13" value="5" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.16" value="3" />
@@ -63,32 +62,32 @@
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.32" value="2" />
-          <entry key="project.opened" value="29" />
+          <entry key="project.opened" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
       <usages-collector id="statistics.spring.boot.mvc.usages" />
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="kt" value="15469" />
+          <entry key="kt" value="16160" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="6" />
-          <entry key="Kotlin" value="52" />
+          <entry key="JAVA" value="7" />
+          <entry key="Kotlin" value="53" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="6" />
-          <entry key="kt" value="52" />
+          <entry key="java" value="7" />
+          <entry key="kt" value="53" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Kotlin" value="15469" />
+          <entry key="Kotlin" value="16160" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -96,20 +95,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_03/09.继承，抽象类，接口.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2208">
-              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_03/10.多态和智能类型转换.kt">
+        <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_03/11.嵌套类和内部类.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="230">
+              <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -164,6 +154,7 @@
         <option value="$PROJECT_DIR$/src/com/example/hy/kotlin_day_03/09.继承，抽象类，接口，多态.kt" />
         <option value="$PROJECT_DIR$/src/com/example/hy/kotlin_day_03/10.多态和智能转换.kt" />
         <option value="$PROJECT_DIR$/src/com/example/hy/kotlin_day_03/10.多态和智能类型转换.kt" />
+        <option value="$PROJECT_DIR$/src/com/example/hy/kotlin_day_03/11.嵌套类和内部类.kt" />
       </list>
     </option>
   </component>
@@ -184,6 +175,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,14 +206,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544247799004" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544341714946" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -246,7 +237,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.com.example.hy.kotlin_day_03._10_多态和智能类型转换Kt">
+  <component name="RunManager" selected="Kotlin.com.example.hy.kotlin_day_03._11_嵌套类和内部类Kt">
     <configuration name="com.example.hy.kotlin_day_03._06_运算符重载Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="kotlinDemo" />
       <option name="VM_PARAMETERS" />
@@ -255,19 +246,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.example.hy.kotlin_day_03._06_运算符重载Kt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.example.hy.kotlin_day_03._07_get和set方法Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="kotlinDemo" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.example.hy.kotlin_day_03._07_get和set方法Kt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -312,20 +290,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.example.hy.kotlin_day_03._11_嵌套类和内部类Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="kotlinDemo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.example.hy.kotlin_day_03._11_嵌套类和内部类Kt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Kotlin.com.example.hy.kotlin_day_03._06_运算符重载Kt" />
-      <item itemvalue="Kotlin.com.example.hy.kotlin_day_03._07_get和set方法Kt" />
       <item itemvalue="Kotlin.com.example.hy.kotlin_day_03._08_主构函数和次构函数Kt" />
       <item itemvalue="Kotlin.com.example.hy.kotlin_day_03._09_继承_抽象类_接口Kt" />
       <item itemvalue="Kotlin.com.example.hy.kotlin_day_03._10_多态和智能类型转换Kt" />
+      <item itemvalue="Kotlin.com.example.hy.kotlin_day_03._11_嵌套类和内部类Kt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.com.example.hy.kotlin_day_03._11_嵌套类和内部类Kt" />
         <item itemvalue="Kotlin.com.example.hy.kotlin_day_03._10_多态和智能类型转换Kt" />
         <item itemvalue="Kotlin.com.example.hy.kotlin_day_03._09_继承_抽象类_接口Kt" />
         <item itemvalue="Kotlin.com.example.hy.kotlin_day_03._08_主构函数和次构函数Kt" />
         <item itemvalue="Kotlin.com.example.hy.kotlin_day_03._06_运算符重载Kt" />
-        <item itemvalue="Kotlin.com.example.hy.kotlin_day_03._07_get和set方法Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -369,11 +360,13 @@
       <workItem from="1544157163375" duration="609000" />
       <workItem from="1544244307433" duration="1886000" />
       <workItem from="1544246276385" duration="1746000" />
+      <workItem from="1544248072126" duration="81000" />
+      <workItem from="1544341014600" duration="930000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48389000" />
+    <option name="totallyTimeSpent" value="49400000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -386,8 +379,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.4252223" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.43977365" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -403,7 +397,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291815" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.41103202" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.41030195" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.31672597" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -415,7 +409,7 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info active="true" anchor="right" id="Kotlin Bytecode" order="9" visible="true" weight="0.32983023" />
+      <window_info anchor="right" id="Kotlin Bytecode" order="9" weight="0.32983023" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -728,15 +722,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_03/09.继承，抽象类，接口.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2208">
+        <state relative-caret-position="69">
           <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_03/10.多态和智能类型转换.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="346">
+          <caret line="25" selection-start-line="25" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_03/11.嵌套类和内部类.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
         </state>
       </provider>
     </entry>
