@@ -36,16 +36,16 @@ class SonBox<T>(something : T): Box<T>(something)
 class FruitBox(something:Fruit) : Box<Fruit>(something)
 
 /**
- * 抽象事物
- */
-abstract class Thing
-
-/**
  * 水果抽象类
  */
 abstract class Fruit : Thing(){
     abstract var name : String
 }
+
+/**
+ * 表示抽象事物
+ */
+abstract class Thing
 
 /**
  * 香蕉
