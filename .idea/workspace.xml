@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9146192f-9eb4-43c0-8225-68ec2cdec4c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/example/hy/kotlin_day_04/06.object单例.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/example/hy/kotlin_day_04/07.伴生对象.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/example/hy/kotlin_day_04/08.实现java一样的单例.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/example/hy/kotlin_day_04/09.枚举.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kotlinDemo/META-INF/kotlinDemo.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kotlinDemo/META-INF/kotlinDemo.kotlin_module" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,9 +48,9 @@
     <session id="-1847977244">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="40" />
+          <entry key="project.closed" value="41" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="4" />
           <entry key="project.open.time.13" value="8" />
@@ -66,7 +63,7 @@
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.32" value="2" />
-          <entry key="project.opened" value="41" />
+          <entry key="project.opened" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
@@ -74,26 +71,26 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="5" />
-          <entry key="kt" value="22492" />
+          <entry key="kt" value="23015" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="9" />
-          <entry key="Kotlin" value="79" />
+          <entry key="Kotlin" value="83" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="9" />
-          <entry key="kt" value="79" />
+          <entry key="kt" value="83" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="5" />
-          <entry key="Kotlin" value="22492" />
+          <entry key="Kotlin" value="23015" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -101,20 +98,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_04/07.伴生对象.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_04/08.实现java一样的单例.kt">
+        <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_04/09.枚举.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state relative-caret-position="177">
+              <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -135,7 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/example/hy/02.Kotlin智能类型推断和类型转换.kt" />
         <option value="$PROJECT_DIR$/src/com/example/hy/04.字符串.kt" />
         <option value="$PROJECT_DIR$/src/com/example/hy/03.可变变量和不可变变量.kt" />
         <option value="$PROJECT_DIR$/src/com/example/hy/05.字符串常用api.kt" />
@@ -186,6 +173,7 @@
         <option value="$PROJECT_DIR$/src/com/example/hy/kotlin_day_04/06.object单例.kt" />
         <option value="$PROJECT_DIR$/src/com/example/hy/kotlin_day_04/07.伴生对象.kt" />
         <option value="$PROJECT_DIR$/src/com/example/hy/kotlin_day_04/08.实现java一样的单例.kt" />
+        <option value="$PROJECT_DIR$/src/com/example/hy/kotlin_day_04/09.枚举.kt" />
       </list>
     </option>
   </component>
@@ -206,7 +194,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,6 +217,13 @@
               <item name="kotlinDemo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hy" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin_day_02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kotlinDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kotlinDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="hy" type="462c0819:PsiDirectoryNode" />
               <item name="kotlin_day_04" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -237,12 +231,13 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545107157370" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545301443915" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -268,20 +263,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.com.example.hy.kotlin_day_04._08_实现java一样的单例Kt">
-    <configuration name="com.example.hy.kotlin_day_04._04_惰性加载和延时加载Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="kotlinDemo" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.example.hy.kotlin_day_04._04_惰性加载和延时加载Kt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.com.example.hy.kotlin_day_04._09_枚举Kt">
     <configuration name="com.example.hy.kotlin_day_04._05_扩展函数Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="kotlinDemo" />
       <option name="VM_PARAMETERS" />
@@ -334,20 +316,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.example.hy.kotlin_day_04._09_枚举Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="kotlinDemo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.example.hy.kotlin_day_04._09_枚举Kt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Kotlin.com.example.hy.kotlin_day_04._04_惰性加载和延时加载Kt" />
       <item itemvalue="Kotlin.com.example.hy.kotlin_day_04._05_扩展函数Kt" />
       <item itemvalue="Kotlin.com.example.hy.kotlin_day_04._06_object单例Kt" />
       <item itemvalue="Kotlin.com.example.hy.kotlin_day_04._07_伴生对象Kt" />
       <item itemvalue="Kotlin.com.example.hy.kotlin_day_04._08_实现java一样的单例Kt" />
+      <item itemvalue="Kotlin.com.example.hy.kotlin_day_04._09_枚举Kt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.com.example.hy.kotlin_day_04._09_枚举Kt" />
         <item itemvalue="Kotlin.com.example.hy.kotlin_day_04._08_实现java一样的单例Kt" />
         <item itemvalue="Kotlin.com.example.hy.kotlin_day_04._07_伴生对象Kt" />
         <item itemvalue="Kotlin.com.example.hy.kotlin_day_04._06_object单例Kt" />
         <item itemvalue="Kotlin.com.example.hy.kotlin_day_04._05_扩展函数Kt" />
-        <item itemvalue="Kotlin.com.example.hy.kotlin_day_04._04_惰性加载和延时加载Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -402,12 +397,13 @@
       <workItem from="1544852079509" duration="1365000" />
       <workItem from="1544939891611" duration="1571000" />
       <workItem from="1545040292338" duration="1119000" />
-      <workItem from="1545105504835" duration="1547000" />
+      <workItem from="1545105504835" duration="1707000" />
+      <workItem from="1545300572208" duration="836000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63489000" />
+    <option name="totallyTimeSpent" value="64485000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -438,7 +434,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291815" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4995958" weight="0.40213522" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4995958" weight="0.40142095" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5004042" side_tool="true" weight="0.40213522" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4995958" weight="0.30782917" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -472,20 +468,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_02/03.标签处返回.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_02/02.break和contiue.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/kotlin/Primitives.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -497,13 +479,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="453" column="32" selection-start-line="453" selection-start-column="32" selection-end-line="453" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_02/01.for循环和foreach循环.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -560,13 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_02/09.when表达式.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2093">
-          <caret line="91" column="15" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -803,17 +771,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_04/07.伴生对象.kt">
+    <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_04/08.实现java一样的单例.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        <state relative-caret-position="241">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_04/08.实现java一样的单例.kt">
+    <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_04/07.伴生对象.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="240">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_02/01.for循环和foreach循环.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_02/09.when表达式.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="91" column="15" selection-start-line="91" selection-start-column="15" selection-end-line="91" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_02/04.while和do while循环.kt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_04/09.枚举.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
