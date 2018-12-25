@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9146192f-9eb4-43c0-8225-68ec2cdec4c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/example/hy/kotlin_day_05/01.kotlin的List.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/example/hy/kotlin_day_05/02.kotlin的set.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/example/hy/kotlin_day_05/03.kotlin的map.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/example/hy/kotlin_day_05/04.闭包.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kotlinDemo/META-INF/kotlinDemo.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kotlinDemo/META-INF/kotlinDemo.kotlin_module" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,9 +62,9 @@
     <session id="-1847977244">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="45" />
+          <entry key="project.closed" value="46" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.10" value="3" />
           <entry key="project.open.time.11" value="4" />
           <entry key="project.open.time.12" value="5" />
           <entry key="project.open.time.13" value="8" />
@@ -80,7 +77,7 @@
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.32" value="2" />
-          <entry key="project.opened" value="46" />
+          <entry key="project.opened" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
@@ -88,26 +85,26 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="5" />
-          <entry key="kt" value="25701" />
+          <entry key="kt" value="26197" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="10" />
-          <entry key="Kotlin" value="96" />
+          <entry key="Kotlin" value="97" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="10" />
-          <entry key="kt" value="96" />
+          <entry key="kt" value="97" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="5" />
-          <entry key="Kotlin" value="25701" />
+          <entry key="Kotlin" value="26197" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -115,11 +112,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_05/03.kotlin的map.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+            <state relative-caret-position="283">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_05/04.闭包.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-253">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -140,7 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/example/hy/08.输入输出函数.kt" />
         <option value="$PROJECT_DIR$/src/com/example/hy/08.函数.kt" />
         <option value="$PROJECT_DIR$/src/com/example/hy/09.模板字符串.kt" />
         <option value="$PROJECT_DIR$/src/com/example/hy/10.if语句.kt" />
@@ -191,6 +196,7 @@
         <option value="$PROJECT_DIR$/src/com/example/hy/kotlin_day_05/01.kotlin的List.kt" />
         <option value="$PROJECT_DIR$/src/com/example/hy/kotlin_day_05/02.kotlin的set.kt" />
         <option value="$PROJECT_DIR$/src/com/example/hy/kotlin_day_05/03.kotlin的map.kt" />
+        <option value="$PROJECT_DIR$/src/com/example/hy/kotlin_day_05/04.闭包.kt" />
       </list>
     </option>
   </component>
@@ -200,7 +206,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
     <option name="width" value="981" />
     <option name="height" value="1032" />
@@ -211,8 +217,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -247,7 +253,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545575965531" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545713901470" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -273,20 +279,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.com.example.hy.kotlin_day_05._03_kotlin的mapKt">
-    <configuration name="com.example.hy.kotlin_day_04._10_密封类Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="kotlinDemo" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.example.hy.kotlin_day_04._10_密封类Kt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.com.example.hy.kotlin_day_05._04_闭包Kt">
     <configuration name="com.example.hy.kotlin_day_04._11_数据类Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="kotlinDemo" />
       <option name="VM_PARAMETERS" />
@@ -339,20 +332,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.example.hy.kotlin_day_05._04_闭包Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="kotlinDemo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.example.hy.kotlin_day_05._04_闭包Kt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Kotlin.com.example.hy.kotlin_day_04._10_密封类Kt" />
       <item itemvalue="Kotlin.com.example.hy.kotlin_day_04._11_数据类Kt" />
       <item itemvalue="Kotlin.com.example.hy.kotlin_day_05._01_kotlin的ListKt" />
       <item itemvalue="Kotlin.com.example.hy.kotlin_day_05._02_kotlin的setKt" />
       <item itemvalue="Kotlin.com.example.hy.kotlin_day_05._03_kotlin的mapKt" />
+      <item itemvalue="Kotlin.com.example.hy.kotlin_day_05._04_闭包Kt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.com.example.hy.kotlin_day_05._04_闭包Kt" />
         <item itemvalue="Kotlin.com.example.hy.kotlin_day_05._03_kotlin的mapKt" />
         <item itemvalue="Kotlin.com.example.hy.kotlin_day_05._02_kotlin的setKt" />
         <item itemvalue="Kotlin.com.example.hy.kotlin_day_05._01_kotlin的ListKt" />
         <item itemvalue="Kotlin.com.example.hy.kotlin_day_04._11_数据类Kt" />
-        <item itemvalue="Kotlin.com.example.hy.kotlin_day_04._10_密封类Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -412,12 +418,13 @@
       <workItem from="1545375777803" duration="1753000" />
       <workItem from="1545377614148" duration="376000" />
       <workItem from="1545573685741" duration="1755000" />
-      <workItem from="1545575484534" duration="303000" />
+      <workItem from="1545575484534" duration="562000" />
+      <workItem from="1545713424339" duration="491000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68808000" />
+    <option name="totallyTimeSpent" value="69558000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -429,10 +436,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="654" height="688" extended-state="0" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.9159664" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.9159256" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -441,16 +448,16 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4987874" weight="0.31227437" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4987874" visible="true" weight="0.3113879" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3985765" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291815" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4987874" weight="0.3985765" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4987874" weight="0.39323843" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5012126" side_tool="true" weight="0.40035588" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4995958" weight="0.3068592" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.4995958" weight="0.30604982" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -482,13 +489,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_02/07.数组的创建.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/kotlin/reflect/KFunction.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -818,8 +818,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_05/03.kotlin的map.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="25" column="19" lean-forward="true" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+        <state relative-caret-position="283">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/hy/kotlin_day_05/04.闭包.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-253">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
