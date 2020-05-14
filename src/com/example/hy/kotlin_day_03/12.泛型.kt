@@ -1,7 +1,7 @@
 package com.example.hy.kotlin_day_03
 
 /**
- * kotlin的泛型
+ * kotlin的泛型：
  * 1、泛型类：
  * 定义对象的时候使用泛型，类名后<T>定义泛型，类中直接使用T
  * 定义子类的时候不知道使用什么泛型，子类继续使用泛型
@@ -13,6 +13,7 @@ fun main(args: Array<String>) {
 
     val banana = Banana("香蕉")
     val banBox = FruitBox(banana)
+    println(banBox.something)
 
     praseType(1)
     praseType("记号")
@@ -33,19 +34,14 @@ class SonBox<T>(something : T): Box<T>(something)
 /**
  * 放水果的箱子
  */
-class FruitBox(something:Fruit) : Box<Fruit>(something)
+class FruitBox(something: Fruit) : Box<Fruit>(something)
 
 /**
  * 水果抽象类
  */
-abstract class Fruit : Thing(){
+abstract class Fruit{
     abstract var name : String
 }
-
-/**
- * 表示抽象事物
- */
-abstract class Thing
 
 /**
  * 香蕉

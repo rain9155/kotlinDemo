@@ -1,7 +1,7 @@
 package com.example.hy.kotlin_day_03
 
 /**
- * kotlin的星号投射
+ * kotlin的星号投射：
  * 可以接受任何类型，相当于java中的 ？类型通配符
  */
 fun main(args: Array<String>) {

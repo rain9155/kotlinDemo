@@ -1,25 +1,23 @@
 package com.example.hy.kotlin_day_03
 
 /**
- * 泛型的上限、擦除、类型投射
+ * 泛型的上限、擦除、类型投射：
  * 1、泛型的上限
- * <T ：对象>限制存放的类型
+ * <T ：对象>限制T的单个上限类型，通过where关键字可以设置多个上限，类似与java中的&关键字，是一种与关系
  * 2、泛型擦除
- * 表示泛型在编译期间类型会被擦除
- * 在java中必须要通过反射在运行期间获取泛型类型
- * 在kotlin中解决泛型擦除的方案是,
- * 1）泛型前加reified
- * 2）方法前加inline
+ * 表示泛型在编译期间类型会被擦除，在java中必须要通过反射在运行期间获取泛型类型，
+ * 在kotlin中解决泛型擦除的方案是,泛型前加reified，如果是方法，方法前还要加inline
  * 3、泛型的类型投射
- * out：接受当前类型或它的子类，相当于java中的 ？extens 对象
- * in：接受当前类型或它的父类，相当于java中的 ？super 对象
+ * <out T>：接受当前类型或它的子类，相当于java中的 ？extend 对象，生产者(Producer), 又称协变
+ * <in T>：接受当前类型或它的父类，相当于java中的 ？super 对象，消费者(Consumer),又称逆变
  */
 fun main(args: Array<String>) {
 
     /** 泛型上限 */
 
     //val other = FruitBox2<Other>(Banana("香蕉")) 报错
-    val fruitBox2 = FruitBox2<Banana>(Banana("香蕉"))
+    val fruitBox2 = FruitBox2<Banana2>(Banana2("香蕉"))
+    println(fruitBox2.something)
 
     /** 泛型擦除 */
 
@@ -29,30 +27,33 @@ fun main(args: Array<String>) {
     val clz2 = box2.javaClass
     println(clz1 == clz2)//输出true，class类型相同，因为<String>和<Int>被擦除了
 
-    //获取类型
+    //解决泛型擦除，通过添加reified关键字，可以直接获取泛型类型
     praseType2("")//输出java.lang.String
     praseType2(10)//输出java.lang.Integer
 
-    /** 泛型投射 */
+    /** 泛型的类型投射 */
 
     val list = ArrayList<Banana>()
-    setFruitList(list)
-    val list2 = ArrayList<Thing>()
-    setFruitList2(list2)
+    setFruitListOut(list)
+    val list2 = ArrayList<Any>()
+    setFruitListIn(list2)
 
 }
 
-
+/**
+ * 水果箱子，限制传入的类型只能为Fruit的子类，并且实现了Other接口
+ */
+class FruitBox2<T>(some : T) : Box<T>(some) where T : Fruit, T : Other
 
 /**
- * 水果箱子，限制传入的类型型只能为Fruit的子类
+ * Other接口
  */
-class FruitBox2<T : Fruit>(some : T) : Box<T>(some)
+interface Other
 
 /**
- * 其他类型
+ * 继承自Fruit，并且实现了Other的香蕉
  */
-class Other
+class Banana2(override var name: String) : Fruit(), Other
 
 /**
  * 获取type的类型
@@ -63,15 +64,15 @@ inline fun <reified T> praseType2(type : T){
 }
 
 /**
- * 设置水果集合，只能接收Fruit或它的子类的集合
+ * 设置水果集合，只能接收类型是Fruit或它的子类的集合
  */
-fun setFruitList(list : ArrayList<out Fruit>){
+fun setFruitListOut(list : ArrayList<out Fruit>){
     println(list.size)
 }
 
 /**
- * 设置水果集合，只能接收Fruit或它的父类的集合
+ * 设置水果集合，只能接收类型是Fruit或它的父类的集合
  */
-fun setFruitList2(list : ArrayList<in Fruit>){
+fun setFruitListIn(list : ArrayList<in Fruit>){
     println(list.size)
 }
