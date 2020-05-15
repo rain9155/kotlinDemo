@@ -20,16 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9146192f-9eb4-43c0-8225-68ec2cdec4c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/example/hy/kotlin_day_06/01.协程入门之启动.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/example/hy/kotlin_day_06/02.协程入门之suspend.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/example/hy/kotlin_day_06/03.协程入门之async.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kotlinDemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/kotlinDemo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/kotlinDemo/META-INF/kotlinDemo.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/kotlinDemo/META-INF/kotlinDemo.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/hy/kotlin_day_03/12.泛型.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/hy/kotlin_day_03/12.泛型.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/hy/kotlin_day_03/13.泛型的上限, 擦除, 类型投射.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/hy/kotlin_day_03/13.泛型的上限, 擦除, 类型投射.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/hy/kotlin_day_03/14.星号投射.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/hy/kotlin_day_03/14.星号投射.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +90,7 @@
       <recent name="J:\kotlin\kotlinDemo\src\com\example\hy\kotlin_day_01" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin._02_协程入门之suspendKt">
+  <component name="RunManager" selected="Kotlin._03_协程入门之asyncKt">
     <configuration name="_01_协程入门之启动Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="kotlinDemo" />
       <option name="VM_PARAMETERS" />
@@ -119,6 +112,19 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.example.hy.kotlin_day_06._02_协程入门之suspendKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_03_协程入门之asyncKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="kotlinDemo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.example.hy.kotlin_day_06._03_协程入门之asyncKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -150,33 +156,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.example.hy.kotlin_day_05._05_高阶函数Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="kotlinDemo" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.example.hy.kotlin_day_05._05_高阶函数Kt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Kotlin.com.example.hy.kotlin_day_05._05_高阶函数Kt" />
-      <item itemvalue="Kotlin._12_泛型Kt" />
-      <item itemvalue="Kotlin._13_泛型的上限__擦除__类型投射Kt" />
       <item itemvalue="Kotlin._01_协程入门之启动Kt" />
       <item itemvalue="Kotlin._02_协程入门之suspendKt" />
+      <item itemvalue="Kotlin._03_协程入门之asyncKt" />
+      <item itemvalue="Kotlin._12_泛型Kt" />
+      <item itemvalue="Kotlin._13_泛型的上限__擦除__类型投射Kt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._03_协程入门之asyncKt" />
         <item itemvalue="Kotlin._02_协程入门之suspendKt" />
         <item itemvalue="Kotlin._01_协程入门之启动Kt" />
         <item itemvalue="Kotlin._13_泛型的上限__擦除__类型投射Kt" />
         <item itemvalue="Kotlin._12_泛型Kt" />
-        <item itemvalue="Kotlin.com.example.hy.kotlin_day_05._05_高阶函数Kt" />
       </list>
     </recent_temporary>
   </component>
@@ -286,25 +279,25 @@
       <screen x="0" y="23" width="1440" height="798" />
     </state>
     <state x="504" y="145" key="#com.intellij.ide.util.MemberChooser/0.23.1440.798@0.23.1440.798" timestamp="1589428422192" />
-    <state width="1398" height="191" key="GridCell.Tab.0.bottom" timestamp="1589457525286">
+    <state width="1398" height="191" key="GridCell.Tab.0.bottom" timestamp="1589464084205">
       <screen x="0" y="23" width="1440" height="798" />
     </state>
-    <state width="1398" height="191" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1589457525286" />
+    <state width="1398" height="191" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1589464084205" />
     <state width="1398" height="191" key="GridCell.Tab.0.bottom/0.23.1440.801@0.23.1440.801" timestamp="1589442750297" />
-    <state width="1398" height="191" key="GridCell.Tab.0.center" timestamp="1589457525285">
+    <state width="1398" height="191" key="GridCell.Tab.0.center" timestamp="1589464084205">
       <screen x="0" y="23" width="1440" height="798" />
     </state>
-    <state width="1398" height="191" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1589457525285" />
+    <state width="1398" height="191" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1589464084205" />
     <state width="1398" height="191" key="GridCell.Tab.0.center/0.23.1440.801@0.23.1440.801" timestamp="1589442750296" />
-    <state width="1398" height="191" key="GridCell.Tab.0.left" timestamp="1589457525285">
+    <state width="1398" height="191" key="GridCell.Tab.0.left" timestamp="1589464084205">
       <screen x="0" y="23" width="1440" height="798" />
     </state>
-    <state width="1398" height="191" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1589457525285" />
+    <state width="1398" height="191" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1589464084205" />
     <state width="1398" height="191" key="GridCell.Tab.0.left/0.23.1440.801@0.23.1440.801" timestamp="1589442750296" />
-    <state width="1398" height="191" key="GridCell.Tab.0.right" timestamp="1589457525286">
+    <state width="1398" height="191" key="GridCell.Tab.0.right" timestamp="1589464084205">
       <screen x="0" y="23" width="1440" height="798" />
     </state>
-    <state width="1398" height="191" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1589457525286" />
+    <state width="1398" height="191" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1589464084205" />
     <state width="1398" height="191" key="GridCell.Tab.0.right/0.23.1440.801@0.23.1440.801" timestamp="1589442750297" />
     <state x="208" y="23" width="1024" height="798" key="SettingsEditor" timestamp="1589376495685">
       <screen x="0" y="23" width="1440" height="798" />
