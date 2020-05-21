@@ -4,9 +4,8 @@ import kotlinx.coroutines.*
 import kotlin.coroutines.suspendCoroutine
 
 /**
- * async/await方法：
- * async是CoroutineScope中的扩展方法，await是async方法返回值Deferred<T>中的suspend方法, 通过async方法可以启动一个协程，
- * 通过返回值的await方法可以返回协程的结果，使用async配合coroutineScope可以很容易地实现结构化编程
+ * coroutineScope：
+ * 使用async配合coroutineScope可以很容易地实现结构化编程,
  */
 fun main(){
     println("Start")
@@ -21,7 +20,7 @@ fun main(){
 
 /**
  * 结构化并发编程:
- * 1、当coroutineScope作用域中某个协程失败抛出异常，当前父协程也会抛出异常，从而结束作用域内的所有协程；
+ * 1、当coroutineScope作用域中某个协程失败抛出异常，父协程会取消作用域内的所有协程，当所有协程取消后，父协程也会抛出异常
  * 2、当coroutineScope作用域中所有协程完成任务后，父协程才会结束返回
  */
 suspend fun sumTask(): Int = coroutineScope {

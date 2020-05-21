@@ -1,5 +1,6 @@
 package com.example.hy.kotlin_day_06
 
+import com.example.hy.kotlin_day_04.name
 import kotlinx.coroutines.*
 import kotlin.coroutines.EmptyCoroutineContext
 
@@ -20,10 +21,24 @@ import kotlin.coroutines.EmptyCoroutineContext
  * 1、通过launch方法会返回一个Job对象，调用Job对象的start、cancel方法可以启动、取消协程的运行，调用它的join方法(suspend标记)可以等待协程的完成；
  * 2、通过async方法会返回一个Deferred<T>对象，它是Job的子类，调用它的await方法(suspend标记)可以返回协程的结果T.
  *
- * 启动协程时的3个关键参数：
- * 1、CoroutineContext：协程上下文，可以通过[Dispatchers]指定协程运行的线程
- * 2、CoroutineStart：协程的启动模式，可以通过[CoroutineStart]指定，默认是立即启动
- * 3、suspend CoroutineScope.() -> Unit：协程运行的代码块
+ * 启动协程时的4个关键参数：
+ * 1、CoroutineScope：协程作用域，它用来追踪通过它的launch或async方法启动的协程，需要时，可以通过它的cancel方法取消所有协程的运行,
+ *                   这三个方法都是CoroutineScope的扩展方法，同时创建CoroutineScope时，需要指定一个CoroutineContext；
+ *
+ * 2、CoroutineContext：协程上下文，它等于[Job] + [Dispatchers] + [CoroutineName] + [CoroutineExceptionHandler]，含义如下：
+ *                     Job: 协程的唯一标识，用来控制协程的生命周期(new、active、completing、completed、cancelling、cancelled)
+ *                     Dispatchers：指定协程运行的线程[IO、Default、Main、Unconfined]
+ *                     CoroutineName：指定协程的名称，默认为coroutine
+ *                     CoroutineExceptionHandler：指定协程的异常处理器，用来处理未捕获的异常
+ *
+ * 3、CoroutineStart：协程的启动模式，可以通过[CoroutineStart]指定，默认是立即启动
+ *
+ * 4、suspend CoroutineScope.() -> Unit：协程运行的代码块
+ *
+ * ps：
+ * 1、协程的上下文CoroutineContext可以通过 + 来组合，+号右边的覆盖左边的；
+ * 2、当新建一个协程时，新协程的CoroutineContext = 父协程的CoroutineContext + 参数的CoroutineContext
+ * 3、每新建一个协程，总会创建一个新的Job
  */
 fun main(args: Array<String>){
     println("Start, thread = " + getThreadName())
@@ -41,7 +56,7 @@ fun main(args: Array<String>){
     println("Hello, thread = " + getThreadName())
 
     /** 3、 自行创建CoroutineScope，调用launch方法启动 */
-    val coroutineScope: CoroutineScope = CoroutineScope(EmptyCoroutineContext)
+    val coroutineScope: CoroutineScope = CoroutineScope(Job() + Dispatchers.IO + CoroutineName("myCoroutine"))
     val job: Job = coroutineScope.launch(start = CoroutineStart.LAZY){
         delay(1000)
         println("Hello World, thread = " + getThreadName())
