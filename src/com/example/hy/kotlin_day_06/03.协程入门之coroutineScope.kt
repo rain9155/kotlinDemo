@@ -5,7 +5,7 @@ import kotlin.coroutines.suspendCoroutine
 
 /**
  * coroutineScope：
- * 使用async配合coroutineScope可以很容易地实现结构化编程,
+ * 使用async配合coroutineScope可以很容易地实现结构化编程
  */
 fun main(){
     println("Start")
@@ -20,8 +20,10 @@ fun main(){
 
 /**
  * 结构化并发编程:
- * 1、当coroutineScope作用域中某个协程失败抛出异常，父协程会取消作用域内的所有协程，当所有协程取消后，父协程也会抛出异常
- * 2、当coroutineScope作用域中所有协程完成任务后，父协程才会结束返回
+ * 1、当coroutineScope作用域中所有协程完成任务后，父协程才会结束返回；
+ * 2、当coroutineScope作用域发生异常或被取消，其作用域内的所有协程也会被取消；
+ * 3、当coroutineScope作用域中某个协程失败抛出异常，父协程会取消作用域内的所有协程，
+ *    当所有协程取消后，父协程也会抛出异常，并且此异常会被父协程的异常处理器处理
  */
 suspend fun sumTask(): Int = coroutineScope {
     val result1 = async { taskAsync1() }
