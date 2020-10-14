@@ -1,5 +1,6 @@
 package com.example.hy.kotlin_day_04
 
+import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
 
 /**
@@ -13,8 +14,9 @@ fun main(args: Array<String>) {
     val son = Son()
     //存钱
     son.压岁钱 = 100
+    son.压岁钱 = 50
     //取钱
-    println(son.压岁钱)//输出：50
+    println(son.压岁钱)//输出：150
 
 }
 
@@ -27,23 +29,20 @@ class Son{
 }
 
 /**
- * 妈妈
+ * 妈妈(ReadWriteProperty接口的实现并不是必须的，只要被委托的类含含有相同签名的get/setValue方法就行)
  */
-class Mother{
+class Mother : ReadWriteProperty<Son, Int>{
 
     var 儿子的压岁钱 = 0
-    var 妈妈自己的钱 = 0
 
     //儿子要压岁钱
-    operator fun getValue(son: Son, property: KProperty<*>): Int {
+    override operator fun getValue(thisRef: Son, property: KProperty<*>): Int {
         return 儿子的压岁钱
     }
 
-    //儿子存压岁钱
-    // i 表示要设置的钱
-    operator fun setValue(son: Son, property: KProperty<*>, i: Int) {
-        儿子的压岁钱 = i - 50
-        妈妈自己的钱 = 50
+    //儿子存压岁钱, value表示要存的钱
+    override operator fun setValue(thisRef: Son, property: KProperty<*>, value: Int) {
+        儿子的压岁钱 += value
     }
 
 }

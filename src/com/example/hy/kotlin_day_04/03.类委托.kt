@@ -48,7 +48,7 @@ class SmallHeadSon : WashPower{
 }
 
 /**
- * 小头儿子
+ * 大头儿子
  */
 class BigHeadSon : WashPower{
     override fun wash() {
@@ -67,7 +67,7 @@ class BigHeadFather : WashPower by SmallHeadSon()
 class BigHeadFather2(var washPower: WashPower) : WashPower by washPower
 
 /**
- * 大头爸爸2, 在委托儿子洗碗前，奖励儿子一块，洗完后，表扬儿子一下 (类委托加强)
+ * 大头爸爸3, 在委托儿子洗碗前，奖励儿子一块，洗完后，表扬儿子一下 (类委托加强)
  */
 class BigHeadFather3(var washPower: WashPower): WashPower by washPower{
 
@@ -75,7 +75,6 @@ class BigHeadFather3(var washPower: WashPower): WashPower by washPower{
         println("奖励一块钱")
         washPower.wash()//儿子洗碗
         println("真棒！以后继续")
-
     }
 
 }
