@@ -3,8 +3,7 @@ package com.example.kotlindemo.kotlin_day_06
 import kotlinx.coroutines.*
 
 /**
- * coroutineScope：
- * 使用async配合coroutineScope可以很容易地实现结构化编程
+ * coroutineScope：使用async配合coroutineScope可以很容易地实现结构化编程
  */
 fun main(){
     println("Start")

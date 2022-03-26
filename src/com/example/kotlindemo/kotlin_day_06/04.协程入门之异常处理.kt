@@ -6,6 +6,10 @@ import kotlinx.coroutines.*
  * 协程的异常处理：
  * 1、当父协程内某个子协程抛出异常时，父协程也会抛出异常, 在抛出异常之前，父协程会取消所有子协程的运行；
  * 2、在启动协程时可以通过[CoroutineExceptionHandler]指定协程的异常处理器，它会处理协程内部未捕获的异常.
+ *
+ * 参考文档：
+ * - [Cancellation and timeouts](https://kotlinlang.org/docs/cancellation-and-timeouts.html)
+ * - [Exception handling](https://kotlinlang.org/docs/exception-handling.html)
  */
 fun main(){
     println("Start")

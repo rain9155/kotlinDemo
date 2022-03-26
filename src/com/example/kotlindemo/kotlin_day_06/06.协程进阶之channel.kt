@@ -20,6 +20,10 @@ import kotlinx.coroutines.runBlocking
  * 当capacity = -1时, 对应[Channel.CONFLATED], channel会合并发送端连续调用的send操作，接收端只会receive到最近一次发送的数据.
  *
  * ps: 当Channel被close/cancel后，后续的send或receive操作都会失败，并且会抛出异常
+ *
+ * 参考文档:
+ * - [Channels](https://kotlinlang.org/docs/channels.html)
+ * - [kotlinx.coroutines.channels](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.channels/index.html)
  */
 fun main(){
     println("Start")

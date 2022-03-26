@@ -4,8 +4,7 @@ import kotlinx.coroutines.*
 import java.lang.NullPointerException
 
 /**
- * supervisorScope作用域：
- * supervisorScope与coroutineScope区别是它不会产生异常传播
+ * supervisorScope作用域：supervisorScope与coroutineScope区别是它不会产生异常传播
  */
 fun main(){
     println("Start")
@@ -43,7 +42,7 @@ suspend fun supervisorTask2(): String{
 }
 
 private fun CoroutineScope.childJob1(): Job{
-    val childCoroutineExceptionHandler = CoroutineExceptionHandler { coroutineContext, throwable ->
+    val childCoroutineExceptionHandler = CoroutineExceptionHandler {coroutineContext, throwable ->
         println("child coroutineExceptionHandler catch exception, msg = ${throwable.message}")
     }
     return launch(childCoroutineExceptionHandler) {

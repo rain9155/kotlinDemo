@@ -25,7 +25,7 @@ import kotlinx.coroutines.*
  *
  * 2、CoroutineContext：协程上下文，它等于[Job] + [Dispatchers] + [CoroutineName] + [CoroutineExceptionHandler]，含义如下：
  *                     Job: 协程的唯一标识，用来控制协程的生命周期(new、active、completing、completed、cancelling、cancelled)
- *                     Dispatchers：指定协程运行的线程[IO、Default、Main、Unconfined]
+ *                     Dispatchers：指定协程运行的线程(IO、Default、Main、Unconfined)
  *                     CoroutineName：指定协程的名称，默认为coroutine
  *                     CoroutineExceptionHandler：指定协程的异常处理器，用来处理未捕获的异常
  *
@@ -37,11 +37,17 @@ import kotlinx.coroutines.*
  * 1、协程的上下文CoroutineContext可以通过 + 来组合，+号右边的覆盖左边的；
  * 2、当新建一个协程时，新协程的CoroutineContext = 父协程的CoroutineContext + 参数的CoroutineContext
  * 3、每新建一个协程，总会创建一个新的Job
+ *
+ * 参考文档：
+ * - [coroutines basics](https://kotlinlang.org/docs/coroutines-basics.html)
+ * - [Coroutine context and dispatchers](https://kotlinlang.org/docs/coroutine-context-and-dispatchers.html)
+ * - [kotlinx.coroutines](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/index.html)
  */
 fun main(args: Array<String>){
     println("Start, thread = " + getThreadName())
 
-    /** 1、通过runBlocking方法启动 */ runBlocking{
+    /** 1、通过runBlocking方法启动 */
+    runBlocking{
         println("Hello World, thread = " + getThreadName())
     }
 

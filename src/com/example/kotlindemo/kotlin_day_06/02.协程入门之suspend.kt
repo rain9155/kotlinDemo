@@ -13,6 +13,9 @@ import kotlin.coroutines.suspendCoroutine
  *
  * ps:在suspend方法调用链的终点，最终是通过suspendCoroutine等方法挂起当前协程，然后在suspendCoroutine方法的block代码块中完成耗时操作，
  *    完成操作后，在block块内部通过调用Continuation的resume/resumeWithException方法恢复外部被挂起的协程
+ *
+ * 参考文档：
+ * - [Composing suspending functions](https://kotlinlang.org/docs/composing-suspending-functions.html)
  */
 fun main(){
     println("Start")
