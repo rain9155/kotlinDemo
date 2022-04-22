@@ -4,6 +4,9 @@ import kotlinx.coroutines.*
 
 /**
  * coroutineScope：使用async配合coroutineScope可以很容易地实现结构化编程
+ *
+ * 参考文档：
+ * [Structured concurrency](https://elizarov.medium.com/structured-concurrency-722d765aa952)
  */
 fun main(){
     println("Start")

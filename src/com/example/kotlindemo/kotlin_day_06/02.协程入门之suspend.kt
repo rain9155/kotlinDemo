@@ -16,6 +16,7 @@ import kotlin.coroutines.suspendCoroutine
  *
  * 参考文档：
  * - [Composing suspending functions](https://kotlinlang.org/docs/composing-suspending-functions.html)
+ * - [Blocking threads, suspending coroutines](https://elizarov.medium.com/blocking-threads-suspending-coroutines-d33e11bf4761)
  */
 fun main(){
     println("Start")

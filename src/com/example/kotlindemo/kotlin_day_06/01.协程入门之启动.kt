@@ -39,9 +39,10 @@ import kotlinx.coroutines.*
  * 3、每新建一个协程，总会创建一个新的Job
  *
  * 参考文档：
- * - [coroutines basics](https://kotlinlang.org/docs/coroutines-basics.html)
+ * - [Coroutines basics](https://kotlinlang.org/docs/coroutines-basics.html)
  * - [Coroutine context and dispatchers](https://kotlinlang.org/docs/coroutine-context-and-dispatchers.html)
  * - [kotlinx.coroutines](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines/index.html)
+ * - [Coroutine Context and Scope](https://elizarov.medium.com/coroutine-context-and-scope-c8b255d59055)
  */
 fun main(args: Array<String>){
     println("Start, thread = " + getThreadName())

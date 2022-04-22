@@ -10,6 +10,8 @@ import kotlinx.coroutines.*
  * 参考文档：
  * - [Cancellation and timeouts](https://kotlinlang.org/docs/cancellation-and-timeouts.html)
  * - [Exception handling](https://kotlinlang.org/docs/exception-handling.html)
+ * - [协程中的取消操作详解](https://mp.weixin.qq.com/s/_MkvDPJR7OIdhiR0Bnz_gA)
+ * - [协程中的异常处理详解](https://mp.weixin.qq.com/s/FjAyR6YPvGy4nH8WsIdpZQ)
  */
 fun main(){
     println("Start")
