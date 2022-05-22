@@ -37,8 +37,7 @@ import kotlin.system.measureTimeMillis
  * [toCollection]、[toList]、[toSet]等：把flow转换成各种集合；
  * [reduce]、[fold]、[first]、[single]等：减少flow收集的元素数量.
  *
- * ps：
- * flow是冷流，可以通过[shareIn]或[stateIn]方法把flow变成[SharedFlow]或[StateFlow], 它们是热流
+ * ps：flow是冷流，可以通过[shareIn]或[stateIn]方法把flow变成[SharedFlow]或[StateFlow], 它们是热流
  *
  * 参考文档：
  * - [Flow](https://kotlinlang.org/docs/reference/coroutines/flow.html)
@@ -446,8 +445,8 @@ suspend fun flowExceptionHandleExample() {
 /**
  * flow的完成处理，当flow出现异常或flow正常结束时处理一些统一逻辑
  */
-suspend fun flowCompleteHandle() {
-    println("flowCompleteHandle")
+suspend fun flowCompleteHandleExample() {
+    println("flowCompleteHandleExample")
 
     /**
      * 通过try catch finally语句
