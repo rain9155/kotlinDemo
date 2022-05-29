@@ -1,31 +1,24 @@
 package com.example.kotlindemo
 
 import kotlinx.coroutines.*
-import kotlinx.coroutines.channels.actor
 
 fun main(){
-    val handler = CoroutineExceptionHandler{coroutineContext, throwable ->
-        println("my coroutineExceptionHandler catch exception, msg = ${throwable.message}")
-    }
-    val parentJob = GlobalScope.launch(handler){
-        val childJob = launch {
-            try {
-                delay(Long.MAX_VALUE)
-            }catch (e: CancellationException){
-                println("catch cancellationException thrown from child launch")
-                println("rethrow cancellationException")
-                throw CancellationException()
-            }finally {
-                println("child was canceled")
-            }
-        }
-        //取消子协程
-        childJob.cancelAndJoin()
-        println("parent is still running")
-    }
-    parentJob.start()
+    println("Hello world!")
+    val scope = CoroutineScope(Dispatchers.Default)
+    scope.launch {
+        async {
+            delay(200)
+            println("async1")
+        }.await()
 
-    //进程保活
+        async {
+            delay(100)
+            println("async2")
+        }.await()
+    }.invokeOnCompletion {
+        println("invokeOnCompletion: $it")
+    }
+
     Thread.sleep(1000)
 }
 
