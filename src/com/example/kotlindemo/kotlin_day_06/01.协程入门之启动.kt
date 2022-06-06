@@ -29,7 +29,7 @@ import kotlinx.coroutines.*
  *                     CoroutineName：指定协程的名称，默认为coroutine
  *                     CoroutineExceptionHandler：指定协程的异常处理器，用来处理未捕获的异常
  *
- * 3、CoroutineStart：协程的启动模式，可以通过[SimpleCoroutineStart]指定，默认是立即启动
+ * 3、CoroutineStart：协程的启动模式，可以通过[CoroutineStart]指定，默认是立即启动
  *
  * 4、suspend CoroutineScope.() -> Unit：协程运行的代码块
  *
