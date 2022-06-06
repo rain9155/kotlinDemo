@@ -18,7 +18,7 @@ fun main(){
 
     /**
      * 当使用launch和async启动根协程而不是作为其他协程的子协程时，
-     * 在launch中抛出的未捕获异常，会被默认的异常处理器处理，
+     * 在launch中抛出的未捕获异常，如果没有指定异常处理器处理，会流转到Thread的uncaughtExceptionHandler中
      * 在async中抛出的未捕获异常，需要用户调用await方法时才抛出
      */
     runBlocking {
